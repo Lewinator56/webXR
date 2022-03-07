@@ -12,5 +12,5 @@ You are required to built a Web-based AR application that displays environmental
 - Extensible object architecture that does not limit use to the initial task outline
 
 ## Arcitecture Overview
-![image](https://user-images.githubusercontent.com/56686419/157092474-b8daf518-3fbb-4443-90d7-8686c906aa43.png)
+![image](https://user-images.githubusercontent.com/56686419/157092676-eb616aac-11b0-4671-a7b4-5f7d8e02aff7.png)
 
