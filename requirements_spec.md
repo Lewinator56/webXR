@@ -18,3 +18,9 @@ You are required to built a Web-based AR application that displays environmental
 - Provide the user with a viewport that displays AR objects as positioned by the database entries in the real world. As a user moves around or rotates their device, more objects will come into the field of view. To simplify calculations, a fixed field of view of 120 degrees will be used, and an object distance limit of 200m will be enforced, objects beywond this distance will not be rendered. Information provided to the user will include details about notable locations around Bangor, such as pontio, main arts, the blob utside pontio etc... Information will be displayed as text rendered on a billboard at the POI's location or 3D models display data, such as graphs, realtime data will not be supported, at least not in regards to 3D objects.
 - The ability to add objects to the database provides an extensible interface allowing users to upload extra data after the application is deployed, a bit like wikipedia. 
 
+## Evaluation Guidelines
+- In order to evaluate the successfulness of the application, a number of attributes will need to be tested:
+    - Ease of use : Is there a point in using the application to view information over simply googling something?
+    - Functional characteristics : Including viewport orientation tracking, object positioning and potential uses as embedded AR.
+    - Scalability : can the application be scaled up and have features added while still being usable?
+
