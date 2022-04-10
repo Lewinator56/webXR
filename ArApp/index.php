@@ -22,12 +22,24 @@
     </head>
     
     <body style="overflow: hidden;">
+        
         <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
         raycaster="objects: [clickable];" id="scene" vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
         <a-camera id="camera" gps-camera rotation-reader position-reader></a-camera>
         
         </a-scene>
         <span id="dataspan" style="top: 0; left: 0; position: absolute"></span>
+        <div style="top: 10; left: 10; right: 10; position: absolute;">
+            <div id="popup" data-aos="fade-down" class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Welcome to ArApp</span>
+                    <p>This application will show markers at points of interest, click on these markers to view extra information about the POIs. <br><br>Your location information is set to the server to determine nearby POIs, we do not log this, and it contains no data that could identify you. For mor information please contact lwd18hvf@bangor.ac.uk.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" onClick="document.getElementById('popup').remove()">dismiss</a>
+                </div>
+            </div>
+        </div>
         <div style="bottom: 10; left: 10; position: absolute;" id="selected-object-card">
             
         </div>
