@@ -39,7 +39,7 @@ AFRAME.registerComponent('position-reader', {
 const clickListener = function (ev) {
     ev.stopPropagation();
     ev.preventDefault();
-    alert("click");
+    //alert("click");
 
     const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
@@ -66,7 +66,7 @@ function addObjects(objJson) {
     for (var i in objJson.data) {
         // remember to change position and replace it with gps-entity-place, position is only here for testing!
         scene.append(
-            "<a-link id='" + i + "' look-at='#camera' class='obj'  material='color: red' clickable position='" + objJson.data[i].lat + " " + objJson.data[i].alt + " " + objJson.data[i].lon + "'>" + //gps-entity-place='latitude: " + objJson.data[i].lat + "; longitude: " + objJson.data[i].lon + "' position='0 " + objJson.data[i].alt + " 0'>"
+            "<a-link id='" + i + "' look-at='#camera' class='obj'  material='color: red' clickable gps-entity-place='latitude: " + objJson.data[i].lat + "; longitude: " + objJson.data[i].lon + "' position='0 " + objJson.data[i].alt + " 0'>" +
             "<a-text value='" + objJson.data[i].title + "' look-at='#camera' position='1 0.25 0' scale='2 2 2 '></a-text>" +
             "<a-text value='" + objJson.data[i].shortdesc + "' look-at='#camera' position='1 -0.125 0' scale='1 1 1'></a-text>" +
             "</a-link>"

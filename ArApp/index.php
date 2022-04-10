@@ -24,7 +24,7 @@
     <body style="overflow: hidden;">
         <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
         raycaster="objects: [clickable];" id="scene" vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-        <a-camera id="camera" gps-camera="simulateLatitude: 53.23; simulateLongitude: -4.1;" rotation-reader position-reader></a-camera>
+        <a-camera id="camera" gps-camera rotation-reader position-reader></a-camera>
         
         </a-scene>
         <span id="dataspan" style="top: 0; left: 0; position: absolute"></span>
